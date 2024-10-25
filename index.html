@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      :root {
+        --Green: hsl(75, 94%, 57%);
+        --White: hsl(0, 0%, 100%);
+        --Grey700: hsl(0, 0%, 20%);
+        --Grey800: hsl(0, 0%, 12%);
+        --Grey900: hsl(0, 0%, 8%);
+        --sans-serif: "Inter", sans-serif;
+      }
+
+      body {
+        background-color: var(--Grey900);
+        margin: 100px auto;
+        padding: 0;
+        font-size: 14px;
+        font-family: var(--sans-serif);
+        color: var(--White);
+        display: grid;
+        place-content: center;
+        min-height: 80vh;
+      }
+
+      .container {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: var(--Grey800);
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+      }
+
+      .container img {
+        max-width: 100px;
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .container h1 {
+        font-size: 1.5rem;
+        margin: 1rem 0 0.3rem;
+      }
+
+      .container h4 {
+        color: var(--Green);
+        font-size: 0.9rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .container p {
+        font-size: 0.8rem;
+      }
+
+      .buttons {
+        margin: 0;
+        padding: 0;
+      }
+
+      .buttons ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        margin: 0;
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+      }
+
+      .container .buttons li {
+        border: 1px solid transparent;
+        background-color: var(--Grey700);
+        color: var(--white);
+        margin: 0;
+        border-radius: 10px;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+      }
+
+      .container .buttons li a {
+        color: var(--white);
+        text-decoration: none;
+        align-items: center;
+        display: block;
+        padding: 0.5rem;
+      }
+
+      .container .buttons li:hover {
+        background-color: var(--Green);
+      }
+
+      .container .buttons li a:hover {
+        color: black;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <img src="./assets/images/avatar-jessica.jpeg" />
+        <h1>Jessica Randall</h1>
+        <h4>London, United Kingdom</h4>
+        <p>"Front-end developer and avid reader."</p>
+        <div class="buttons">
+          <ul>
+            <li><a href="#"> GitHub</a></li>
+            <li><a href="#">Frontend Mentor</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Manisha</a>.
+      </div>
+    </footer>
+  </body>
+</html>
